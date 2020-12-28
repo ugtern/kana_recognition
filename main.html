@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="style.css"/>
+ <title>Paint</title>
+ </head>
+<body>
+ <div id = "wrapper">
+     <canvas id = "paint" width = "100" height = "100" style="background-color: beige;"></canvas>
+     <form method = "POST" action = "http://0.0.0.0:8088/check_data" enctype = "multipart/form-data">
+      <input type = "text" id = "canvasData" name = "canvasData" />
+       <input  type = "button" id = "clear" name = "clear" value = "Очистить" />
+      <input type = "submit" value = "Сохранить" />
+     </form>
+ </div>
+</body>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+
+</html>
